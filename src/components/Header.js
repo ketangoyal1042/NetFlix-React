@@ -5,7 +5,7 @@ import { signOut } from "firebase/auth";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const authAuth = useSelector(store=> store.userAuth);
+  const authAuth = useSelector(store=> store?.userAuth?.userAuth);
   const navigate = useNavigate();
   const handleSignOut = () => {
     signOut(auth).then(() => {
