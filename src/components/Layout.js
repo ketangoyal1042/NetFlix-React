@@ -8,7 +8,7 @@ const Layout = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(() => {
-    // this is like an eventListner this works on page refresh and auth state change loke login logouy signin signout
+    // this is like an eventListner this works on page refresh and auth state change like login logout signin signout
     const unSubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, email, displayName, photoURL } = user;
