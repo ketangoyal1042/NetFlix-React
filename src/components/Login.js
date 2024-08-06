@@ -82,12 +82,12 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src="../images/NetfixBackground.jpg" alt="" />
+        <img src="../images/NetfixBackground.jpg" alt="" className="h-screen w-screen object-cover"/>
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
         action=""
-        className="bg-black bg-opacity-80 absolute mx-auto my-36 right-0 left-0 w-3/12 p-10 h-3/2 text-white"
+        className="bg-black bg-opacity-80 absolute mx-auto my-36 right-0 left-0 w-10/12 md:w-3/12 p-10 h-3/2  text-white"
       >
         <table className="flex flex-col ">
           <td>

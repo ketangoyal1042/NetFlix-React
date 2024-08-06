@@ -17,10 +17,12 @@ const Browse = () => {
     <div>
       <Header />
       <div className="fixed -z-10">
-        <img src="../images/NetfixBackground.jpg" alt="" />
+        <img src="../images/NetfixBackground.jpg" alt="" className="h-screen w-screen object-cover"/>
       </div>
       {showGPT ? (
-        <GptSearch />
+        <div className="pt-[30%] md:pt-0">
+          <GptSearch />
+        </div>
       ) : (
         <>
           <MainContainer />
